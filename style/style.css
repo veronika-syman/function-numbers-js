@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Black.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/fonts/Roboto-Thin.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    color: #000000;
+
+    font-family: Roboto, Arial, sans-serif;
+
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url("../src/images/work-cases/0_89074543-127279682169154-6810972546884698112-n_99a2597e.jpg");
+}
+
+header .container {
+    height: 100%;
+}
+
+header .logo {
+    height: 120px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: flip-logo 6s ease-in-out infinite;
+}
+@keyframes flip-logo {
+    0% {
+        transform: rotateY(0deg);
+    }
+    40% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+main {
+    width: 930px;
+    min-height: calc(100vh - 300px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color:rgb(255, 245, 234);
+}
+
+main div {
+    box-sizing: border-box;
+    font-size: 32px;
+    background-color: rgba(0, 0, 255, 0.5);
+    text-align: center;
+}
+
+main h2 {
+    width: 100%;
+    text-shadow: 0px 3px 6px rgb(59, 154, 243);
+}
+
+main .work-case {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main .work-case span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: 20px;;
+    width: 100%;
+    padding: 6px;
+    color:cornflowerblue;
+    background-color:gainsboro;
+
+    transition: background-color .6s ease-in-out;
+}
+
+main .work-case:hover span {
+    background-color:darkgrey;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    width: 270px;
+    height: 496px;
+    background-color:gainsboro;
+    overflow:scroll;
+}
+
+aside div {
+    display: block;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 20px 24px 12px;
+    color:cornflowerblue;
+    font-size: 30px;
+    font-weight: 700; 
+}
+
+aside a {
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 18px;
+    margin: 6px;
+    color:cornflowerblue;
+    font-size: 20px;
+    background-color: #0c0b217a;
+    border-radius: 6px 6px 6px 0;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-image: url("../src/images/work-cases/web-development-university-worcester-course-page-header.jpg");
+}
+marquee{
+    color: white;
+   
+}
